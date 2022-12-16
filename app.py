@@ -13,13 +13,14 @@ app.app_context().push()
 connect_db(app)
 
 # *route for homepage
+
 @app.route('/')
 def homepage():
     """Shows homepage"""
     
     cupcakes = Cupcake.query.all()
     
-    return render_template('index.html')
+    return render_template('index.html', cupcakes=cupcakes)
 
 # *api route for cupcakes
 # TODO all api routes must be jsonified in some way
