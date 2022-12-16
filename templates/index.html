@@ -21,28 +21,29 @@
 
   <!-- TODO loop over cupcakes -->
   <div class="container">
-    <form method="post">
+    <h1 class="display-1 text-center">CUPCAKES</h1>
+  <div class="container justify-content-center">
+    <form class="cupcake-form">
       <div class="form-group">
         <label for="flavor">Cupcake Flavor</label>
-        <input type="text" name="flavor" class="form-control" placeholder="Enter a flavor/type">
+        <input type="text" name="flavor" class="flavor-input form-control" placeholder="Enter a flavor/type">
       </div>
       <div class="form-group">
         <label for="size">Size</label>
-        <input type="text" name="size" class="form-control" placeholder="eg large">
+        <input type="text" name="size" class="size-input form-control" placeholder="eg large">
       </div>
       <div class="form-group">
         <label for="image">Image URL</label>
-        <input type="text" name="image" class="form-control" placeholder="Please enter an image url">
+        <input type="text" name="image" class="image-input form-control" placeholder="Please enter an image url">
       </div>
       <div class="form-group">
-        <label for="Rating"></label>
-        <input type="number" step="0.5" min="1" max="10" name="text" class="form-control" >
+        <label for="Rating">Rating</label>
+        <input type="number" step="0.5" min="1" max="10" name="text" class="number-input form-control" placeholder="Please enter an amount from 1.0 to 10.0" >
       </div>
-      <button btn btn-primary>Submit</button>
+      <button class="submit-btn btn btn-primary">Submit</button>
     </form>
   </div>
-  <div class="container">
-     <h1 class="display-1 text-center">CUPCAKES</h1>
+ 
     
      <div class="container">
         <div class="row row-cols-2">
